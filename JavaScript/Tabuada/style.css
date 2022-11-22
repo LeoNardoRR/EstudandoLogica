@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fundo
+{
+    position: relative;
+    /* margin: 10em 35em; */
+    margin-bottom: 20px;
+    background-color: black;
+    width: 15em;
+    /* height: 15em; */
+    align-items: center;
+}
+
+a, p, b, i
+{
+    color: white;
+}
