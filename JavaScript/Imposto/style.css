@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    color: black;
+}
+.fundo
+{
+    position: relative;
+    /* margin: 10em 35em; */
+    margin-bottom: 20px;
+    background-color: black;
+    width: 15em;
+    /* height: 15em; */
+    align-items: center;
+}
+
+p, b, i
+{
+    color: white;
+}

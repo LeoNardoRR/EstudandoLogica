@@ -1,0 +1,46 @@
+<!--Uma empresa de computadores possui clientes em diversos estados. Para realizar a venda é necessário calcular o imposto do produto, 
+onde cada estado aplica uma alíquota variada. Construa um programa que receba o valor do produto e o estado de venda, calcule o valor 
+do imposto e exiba o valor final do produto conforme a tabela abaixo:-->
+
+<!--
+MG -> 7%
+SP -> 12%
+RJ -> 15%
+MS -> 8%
+ES -> 12%
+SC -> 18%
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="imposto.js"></script>
+    <title>Imposto</title>
+    <label>Escolha o estado:</label>
+        <select id="estado" name="estado">
+        <option></option>
+        <option>MG</option>
+        <option>SP</option>
+        <option>RJ</option>
+        <option>MS</option>
+        <option>ES</option>
+        <option>SC</option>
+    </select>
+    <a>Digite o valor da venda:</a></br>
+    <input type="text" id="valor" placeholder="$0">
+    <br/>
+    <button onclick="calcular()">
+        Calcular Imposto
+    </button>
+    <div class="fundo" id="resultado">
+        <p>Resultado:</p>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
