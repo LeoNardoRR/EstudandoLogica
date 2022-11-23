@@ -11,8 +11,8 @@
 //SC -> 18%
 
 function calcular() {
-    const valor = document.getElementById('valor')
-    const estado = document.getElementById('estado')
+    const valor = document.getElementById('valor')//valor digitado no input
+    const estado = document.getElementById('estado') //
     const resultado = document.getElementById('resultado');
     const number = parseInt(valor.value)
 
@@ -23,7 +23,9 @@ function calcular() {
 
     resultado.innerHTML = '<i>Resultado:</i>';
 
-    if(estado == "MG"){
-        const estado = valor * 0.7;
-        resultado.innerHTML += `<b>${estado}</b><br />`    }
+    if(estado == MG){
+        const calculo = valor * 0.7;
+        resultado.innerHTML = `<b>${valor}</b><br>`    
+        return resultado;
+    }
 }
