@@ -10,13 +10,20 @@
 //ES -> 12%
 //SC -> 18%
 
+function calcular() {
+    const valor = document.getElementById('valor')
+    const estado = document.getElementById('estado')
+    const resultado = document.getElementById('resultado');
+    const number = parseInt(valor.value)
 
-
-    function porcent(estado){
-    {
-        var estado = document.getElementById('result').innerHTML; 
-        // O getElementById retorna a referência do elemento através do seu ID
-
-        document.getElementById('result').innerHTML = "%" + estado * 0.7; 
+    if (number <= 0 || Number.isNaN(number)) {
+        console.error('Valor ' + valor.value + ' inválido')
+        return;
     }
+
+    resultado.innerHTML = '<i>Resultado:</i>';
+
+    if(estado == "MG"){
+        const estado = valor * 0.7;
+        resultado.innerHTML += `<b>${estado}</b><br />`    }
 }
