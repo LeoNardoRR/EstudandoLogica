@@ -10,15 +10,14 @@ a{
 .fundo
 {
     position: relative;
-    /* margin: 10em 35em; */
+    border: solid 1px;
     margin-bottom: 20px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 15em;
-    /* height: 15em; */
     align-items: center;
 }
 
 p, b, i
 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
