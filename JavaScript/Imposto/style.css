@@ -9,6 +9,8 @@ a{
 }
 .fundo
 {
+    width: 20px;
+    height: 20px;
     position: relative;
     border: solid 1px;
     margin-bottom: 20px;

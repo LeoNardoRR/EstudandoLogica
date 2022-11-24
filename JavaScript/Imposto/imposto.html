@@ -13,34 +13,38 @@ SC -> 18%
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="imposto.js"></script>
+</head>
+
+<body>
+
     <title>Imposto</title>
-    <label>Escolha o estado:</label>
-        <select id="estado" name="estado">
-        <option></option>
-        <option>MG</option>
-        <option>SP</option>
-        <option>RJ</option>
-        <option>MS</option>
-        <option>ES</option>
-        <option>SC</option>
-    </select>
+
+    <label>Digite o estado:</label>
+    <input type="text" id="estado" placeholder="">
+    
     <a>Digite o valor da venda:</a></br>
     <input type="text" id="valor" placeholder="$0">
-    <br/>
+    
+    </br>
+    
     <button onclick="calcular()">
         Calcular Imposto
     </button>
+    </br>
+
+    <p>Valor com imposto:</p>
+
     <div class="fundo" id="resultado">
-        <p>Resultado:</p>
     </div>
-</head>
-<body>
-    
+
 </body>
+
+<script src="imposto.js"></script>
+
 </html>
