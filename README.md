@@ -1,4 +1,4 @@
-# 🤨 Studying
+#😕 Studying
 
 <p align="left">
   <!-- License -->
