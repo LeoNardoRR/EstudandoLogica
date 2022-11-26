@@ -7,12 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a>Escolha a medição de temperatura:</a>
-    <select name="select">
-        <option></option>
-        <option value="valor1">Fahrenheit</option>
-        <option value="valor2">Celsius</option>
-    </select>
+
+    <label>Digite medição de temperatura:</label>
+    <input type="text" id="medicao" placeholder="">
+
 </br>
 </br>
 
@@ -23,7 +21,7 @@
 </br>
 
     <button id="calculo">Calcular</button>
-    <div class="fundo">A temperatura é:</div>
+    <div class="fundo" id="resultado">A temperatura é:</div>
 </body>
 <script src="logica.js"></script>
 </html>
