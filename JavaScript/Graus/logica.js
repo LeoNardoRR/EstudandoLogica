@@ -10,12 +10,12 @@
     
         resultado.innerHTML = '<i>Resultado:</i>';
 
-    if(medicao == 'fahrenheit'){
+    if(temperatura == 'F'){
         const calculo = parseInt(valor) + parseInt((valor * 0.07));
         resultado.innerHTML = `<b>${calculo}</b><br>`;    
         return calculo;
     }
-    else if(celsius ==''){
+    else if(temperatura =='C'){
         celsius = (parseInt(fahrenheit) - 32) * 1.8;
     }
     
