@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.opcao{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: 5vh;
+}
+
+.escolha{
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+}
+
+.resultado{
+    position: relative;
+    top: 15vh;
+    left: 12vh;
+}
+
+.button{
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    top: 20%;
+}
+
+a{
+    color: white;
+}

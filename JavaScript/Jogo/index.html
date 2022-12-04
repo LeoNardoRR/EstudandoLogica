@@ -1,0 +1,42 @@
+<!--Crie o jogo “Pedra, Papel, Tesoura” por meio de um código em JavaScript.
+Para isso, solicite que o primeiro jogador informe a sua escolha e depois o
+mesmo para o segundo jogador. Por fim, utilize os if’s para saber quem
+seria o vencedor.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="opcao">
+
+        <a>Jogador 1:</a>
+            <select class="escolha">
+                <option></option>    
+                <option>Pedra</option>               
+                <option>Papel</option>               
+                <option>Tesoura</option>                          
+            </select>
+            
+        <a>Jogador 2:</a>
+            <select class="escolha">
+                <option></option>    
+                <option>Pedra</option>               
+                <option>Papel</option>               
+                <option>Tesoura</option>                          
+            </select>
+        </div>
+            <button class="button" type= "button">Jogar</button>
+            <input class="button" type="reset">    
+        <input class="resultado" type="" placeholder="O vencedor é:">
+    </div>
+</body>
+<script src="teste.js"></script>
+</html>
