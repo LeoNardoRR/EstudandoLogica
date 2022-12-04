@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); </style>
     <link rel="stylesheet" href="style.css">
     <script src="JS.js"></script>
     <title>Tabuada</title>
 </head>
 <body>
-    <div class="fundo" id="resultado">
-            <a>Resultado:</a>
+    <div class="text">
+        <label  for="numberInput">Escolha um número:</label>
+        <input class="numbe" type="number" id="numberInput">
     </div>
-    <label for="numberInput">Digite um número:</label>
-    <input type="text" id="numberInput" placeholder="Digite um número:">
-    <br/>
-    <button onclick="calcular()">
-        Calcular
-    </button>
+
+    <div class="container2">
+        <button class="button" onclick="calcular()">
+            Calcular
+        </button>
+    </div>
+
+    <div>
+        <div class="fundo" id="resultado"></div>
+    </div>
+
 </body>
 </html>

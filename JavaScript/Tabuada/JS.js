@@ -9,15 +9,11 @@ function calcular() {
         return;
     }
 
-    resultado.innerHTML = '<i>Resultado:</i>';
+    resultado.innerHTML = '<p>Resultado:</p><br><br>';
 
     for (let index = 1; index <= 10; index++) {
         const multiplicationResult = number * index;
-        // const calculo = `${number}x${index} = ${multiplicationResult}`
-        // Linha fake só pra ficar bonitinho no html
         const calculo = number + 'x' + index + ' = ' + multiplicationResult;
         resultado.innerHTML += `<b>${calculo}</b><br />`
-
-        // console.log(`${number}x${index} = ${multiplicationResult}`)
     }
 }
