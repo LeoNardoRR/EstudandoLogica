@@ -17,6 +17,7 @@ SC -> 18%
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,27 +25,33 @@ SC -> 18%
 <body>
 
     <title>Imposto</title>
+</br>
+</br>
+</br>
+<div class="imposto">
+    </br><label>Escolha o estado:</label></br>
 
-    <label>Digite o estado:</label>
-    <input type="text" id="estado" placeholder="">
+    <select class="valor">
+        <option></option>
+        <option type="text" id="estado">Minas Gerais</option>
+        <option type="text" id="estado">São Paulo</option>
+        <option type="text" id="estado">Rio de Janeiro</option>
+        <option type="text" id="estado">Mato Grosso do Sul</option>
+        <option type="text" id="estado">Espirito Santo</option>
+        <option type="text" id="estado">Santa Catarina</option>
+    </select>
     
-    <a>Digite o valor da venda:</a></br>
-    <input type="text" id="valor" placeholder="$0">
-    
-    </br>
-    
-    <button onclick="calcular()">
-        Calcular Imposto
-    </button>
-    </br>
+    </br></br><a>Digite o valor da venda:</a></br>
+    <input class="valor" type="text" id="valor" placeholder="R$0">
+    <div class="fundo" id="resultado"></div>
+</div>
 
+<div>
+    </br>    
+    <button class="button" onclick="calcular()">Calcular Imposto</button>
     <p>Valor com imposto:</p>
-
-    <div class="fundo" id="resultado">
-    </div>
+</div>
 
 </body>
-
 <script src="imposto.js"></script>
-
 </html>

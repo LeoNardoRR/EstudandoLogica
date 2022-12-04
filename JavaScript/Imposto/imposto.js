@@ -9,10 +9,11 @@
 //ES -> 12%
 //SC -> 18%
 
-function calcular() {
+function calcular() 
+{
     const valor = document.getElementById('valor').value ;//valor digitado no input
     const estado = document.getElementById('estado').value; //
-    const resultado = document.getElementById('resultado');
+    const resultado = document.getElementById('resultado').value;
     
     console.log('Valor: ' + valor + '| estado: ' + estado + '| resultado: ' + resultado +'| number: ' );
     if (valor <= 0 || isNaN(valor)) {
@@ -20,36 +21,36 @@ function calcular() {
         return;
     }
 
-    resultado.innerHTML = '<i>Resultado:</i>';
+    resultado.innerHTML = '<i>Inválido:</i>';
 
-    if(estado.toUpperCase() == 'MG'){
+    if(estado.toUpperCase() == 'Minas Gerais'){
         const calculo = parseInt(valor) + parseInt((valor * 0.07));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
-    if(estado.toUpperCase() == 'SP'){
+    if(estado.toUpperCase() == 'São Paulo'){
         const calculo = parseInt(valor) + parseInt((valor * 0.12));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
-    if(estado.toUpperCase() == 'RJ'){
+    if(estado.toUpperCase() == 'Rio de Janeiro'){
         const calculo = parseInt(valor) + parseInt((valor * 0.15));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
-    if(estado.toUpperCase() == 'MS'){
+    if(estado.toUpperCase() == 'Mato Grosso do Sul'){
         const calculo = parseInt(valor) + parseInt((valor * 0.08));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
-    if(estado.toUpperCase() == 'ES'){
+    if(estado.toUpperCase() == 'Espirito Santo'){
         const calculo = parseInt(valor) + parseInt((valor * 0.12));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
-    if(estado.toUpperCase() == 'SC'){
+    if(estado.toUpperCase() == 'Santa Catarina'){
         const calculo = parseInt(valor) + parseInt((valor * 0.18));
-        resultado.innerHTML = `<b>${calculo}</b><br>`;    
+        resultado.innerHTML = `<b>Resultado: R$${calculo}</b><br>`;    
         return calculo;
     }
     else
