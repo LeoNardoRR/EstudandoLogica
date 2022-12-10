@@ -1,57 +1,113 @@
 *{
-    margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 28px;
+    font-family: 'Nerko One', cursive;
 }
 
 body{
-    height: 100vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    background-color: black;
+
+}
+
+.placar{
+    border: 1px solid white;
+    width: 25%;
+    height: 20%;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 0%;
+    position: absolute;
+    left: 36%;
+}
+
+a {
+    color: white;
+    margin-top: -6%;
 }
 
 .container{
-    background-color: brown;
-    width: 400px;
+    position: absolute;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 200px;
     height: 200px;
-    border-radius: 6px;
-    position: relative;
+    top: 44%;
+    left: 20%;
 }
 
-.opcao{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    left: 20px;
-    top: 5vh;
+.container:hover{
+    border: solid 3px green;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-.escolha{
-    border: none;
-    border-radius: 4px;
-    position: relative;
-    justify-content: center;
+.container2{
+    position: absolute;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: 44%;
+    left: 40%;
 }
 
-.resultado{
+.container2:hover{
+    border: solid 3px green;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.container3{
+    position: absolute;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: 44%;
+    left: 60%;
+}
+
+.container3:hover{
+    border: solid 3px green;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.paper{
     position: relative;
-    top: 15vh;
-    left: 12vh;
+    top: 14%;
+    left: 30%;
+    width: 100px;
+}
+
+.rock{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 100px;
+}
+
+.scissors{
+    position: absolute;
+    top: 14%;
+    left: 28%;
+    width: 80px;
 }
 
 .button{
-    padding: 7px;
+    position: absolute;
+    margin-top: 33%;
+    left: 44%;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: blue;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    left: 40%;
-    top: 20%;
-}
-
-a{
     color: white;
 }

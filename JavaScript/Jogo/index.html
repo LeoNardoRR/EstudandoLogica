@@ -9,34 +9,27 @@ seria o vencedor.-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Pedra, Papel e Tesoura</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+    </style>      
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">  
+    <title>jogo</title>
 </head>
 <body>
+    <a>PLACAR</a>
+<div>
+    <div class="placar"></div>
     <div class="container">
-        <div class="opcao">
-
-        <a>Jogador 1:</a>
-            <select class="escolha">
-                <option></option>    
-                <option>Pedra</option>               
-                <option>Papel</option>               
-                <option>Tesoura</option>                          
-            </select>
-            
-        <a>Jogador 2:</a>
-            <select class="escolha">
-                <option></option>    
-                <option>Pedra</option>               
-                <option>Papel</option>               
-                <option>Tesoura</option>                          
-            </select>
-        </div>
-            <button class="button" type= "button">Jogar</button>
-            <input class="button" type="reset">    
-        <input class="resultado" type="" placeholder="O vencedor é:">
+        <img class="paper" src="img/Papel.png">
     </div>
+    <div class="container2">
+        <img class="rock" src="img/Pedra.png">
+    </div>
+    <div class="container3">
+        <img class="scissors" src="img/Tesoura.png">
+    </div>
+    <button class="button">Jogar</button>
+</div>
 </body>
-<script src="teste.js"></script>
 </html>
